@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello World!</title>
+        <link rel="stylesheet" href="split.css">
+        <script>window.$ = window.jQuery = require('./node_modules/jquery/dist/jquery.js');</script>
+        <script>require('./node_modules/jqtree/tree.jquery.js')</script>
+        <link rel="stylesheet" href="./node_modules/jqtree/jqtree.css">
+    </head>
+    <body>
+        <div style="width: 100%">
+            <div id="left-pane">
+                <h3> Schema View </h3>
+                <button type="button">Add Child</button>
+                <button type="button">Add Above</button>
+                <button type="button">Add Below</button>
+                <button type="button">Add Choice Node</button>
+                <div id="tree1"></div>
+            </div>
+            <div id="right-pane">
+                <h3> Properties </h3>
+                <form>
+                    Tag: <br>
+                    <input type="text" name="label"><br>
+                    <input type="checkbox" name="isordered"> Unordered <br>
+                    Min Occurances: <br>
+                    <input type="number" name="minOcc"> <br>
+                    Max Occurances: <br>
+                    <input type="number" name="maxOcc"> <br>
+                    Attributes: <br>
+                    <table style="width:100%">
+                        <tr>
+                            <th>Attribute</th>
+                            <th>Default Value</th>
+                        </tr>
+                    </table>
+                    New Attribute: <br>
+                    Name: <input type="text" name="attr"><br>
+                    Def Val: <input type="text" name="dval"><br>
+                    <button type="button">Add Attr.</button>
+                </form>
+            </div>
+        </div>
+        <div style="clear:both"></div>
+    </body>
+    <script>
+        // You can also require other files to run in this process
+        require('./renderer.js')
+    </script>
+</html>

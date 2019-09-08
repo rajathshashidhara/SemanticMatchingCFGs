@@ -1,0 +1,18 @@
+#left-pane {
+	float: left;
+	width: 65%;
+	background-color: #FFCCAA;
+	border-right-color: #552200;
+	text-align: center;
+}
+
+#right-pane {
+	float: right;
+	width: 34%;
+	background-color: #D4956A;
+	text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
