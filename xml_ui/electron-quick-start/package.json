@@ -27,6 +27,6 @@
   },
   "dependencies": {
     "jqtree": "^1.3.2",
-    "jquery": "^2.2.3"
+    "jquery": "^3.5.0"
   }
 }
